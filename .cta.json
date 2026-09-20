@@ -1,5 +1,5 @@
 {
-  "projectName": "mcpqa-tanstack-start",
+  "projectName": "tanstack-taskboard",
   "mode": "file-router",
   "typescript": true,
   "tailwind": false,
