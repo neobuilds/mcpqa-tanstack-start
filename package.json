@@ -1,6 +1,7 @@
 {
-  "name": "mcpqa-tanstack-start",
+  "name": "tanstack-taskboard",
   "private": true,
+  "version": "1.0.0",
   "type": "module",
   "imports": {
     "#/*": "./src/*"
@@ -8,16 +9,19 @@
   "scripts": {
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
+    "typecheck": "tsc --noEmit",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "HOST=0.0.0.0 node .output/server/index.mjs"
+    "start": "HOST=0.0.0.0 node .output/server/index.mjs",
+    "verify": "bash scripts/verify.sh"
   },
   "dependencies": {
     "@tanstack/react-router": "latest",
     "@tanstack/react-start": "latest",
     "nitro": "3.0.260610-beta",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@tanstack/router-cli": "^1.132.0",
